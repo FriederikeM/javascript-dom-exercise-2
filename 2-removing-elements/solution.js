@@ -1,13 +1,14 @@
-const button = document.querySelector(".button-add");
-const container = document.querySelector(".container");
+let button = document.querySelector("button");
+let container = document.querySelector(".container");
 
 button.addEventListener("click", () => {
-  const box = document.createElement("div");
-  box.classList.add("box");
-
-  box.addEventListener("click", () => {
-    box.remove();
+  const boxElement = document.createElement("div");
+  boxElement.classList.add("box");
+  container.append(boxElement);
+  boxElement.addEventListener("click", () => {
+    let confirmation = confirm("Are you sure you want to remove this box?");
+    if (confirmation) {
+      boxElement.remove();
+    }
   });
-
-  container.append(box);
 });
