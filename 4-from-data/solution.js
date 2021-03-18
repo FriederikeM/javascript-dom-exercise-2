@@ -26,3 +26,22 @@ button.addEventListener("click", () => {
     container.append(circle);
   }
 });
+
+const elementsToRender = [
+  {
+    className: "box",
+    backgroundColor: "lightgreen",
+  },
+  {
+    className: "circle",
+    backgroundColor: "lightseagreen",
+  },
+  {
+    className: "box",
+    backgroundColor: "lightgreen",
+  },
+  {
+    className: "circle",
+    backgroundColor: "lightseagreen",
+  },
+];
